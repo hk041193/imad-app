@@ -1,7 +1,17 @@
 console.log('Loaded!');
 
-//move the image
-var img = documrnt.getElementById('img');
-img.onclick = function() {
-   img.style.marginLeft = '100px'; 
+//Counter code
+var button = document.getElementById("counter");
+var counter = 0;
+
+button.onClick = function () {
+    
+    //Make request to counter endpoint
+    
+    //Capture the response and store it in a variable
+    
+    //Render the variable in correct span
+    counter = counter + 1;
+    var span = document.getElementById("count");
+    span.innerHTML = counter.toString();
 };
