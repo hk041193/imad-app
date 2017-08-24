@@ -2,16 +2,25 @@ console.log('Loaded!');
 
 //Counter code
 var button = document.getElementById('counter');
-var counter = 0;
 
 button.onClick = function () {
     
-    //Make request to counter endpoint
+    //Create request to object
+    var request = new XMLhttprequest();
     
     //Capture the response and store it in a variable
+    request.onreadystatechange = function () {
+       if (request.readyState === xmlhttprequest.DONE) {
+           // Take some action
+           if (request.status === 200) {
+               var counter = request.responseText;
+               var span = document.getElementById('count');
+               span.innerHTML = counter.toString();
+           }
+       } 
+    };
     
-    //Render the variable in correct span
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    //make the request
+    request.open('GET', 'http://hk041193.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
