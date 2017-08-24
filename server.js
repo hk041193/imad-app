@@ -11,40 +11,40 @@ var articles = {
         heading: 'Article One',
         date: 'Aug 24, 2017',
         content: 
-        `<p>
+        <p>
         This is my first article.
         </p>
         
         <p>
         This is my first article
-        </p>`
-    },
+        </p>
+    }`,
     `article-two: {
         title: 'Article Two | Himanshu Kullu',
         heading: 'Article Two',
         date: 'Aug 25, 2017',
         content: 
-        `<p>
+        <p>
         This is my second article.
         </p>
         
         <p>
         This is my second article
-        </p>` 
-    },
+        </p>
+    }`,
     `article-three: {
         title: 'Article Three | Himanshu Kullu',
         heading: 'Article Three',
         date: 'Aug 26, 2017',
         content: 
-        `<p>
+        <p>
         This is my three article.
         </p>
         
         <p>
         This is my three article
         </p>`
-    }
+    }`
 };
 
 function createTemplate (data) {
