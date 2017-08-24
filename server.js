@@ -45,7 +45,7 @@ var articles = {
         This is my three article
         </p>`
     }`
-};
+}`;
 
 function createTemplate (data) {
     var title= data.title;
