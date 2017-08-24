@@ -4,15 +4,15 @@ var button = document.getElementById('counter');
 button.onClick = function () {
     
     //Create request to object
-    var request = new XMLhttprequest();
+    var request = new XMLHttpRequest();
     
     //Capture the response and store it in a variable
     request.onreadystatechange = function () {
-       if (request.readyState === xmlhttprequest.DONE) {
+       if (request.readyState === xmlHttpRequest.DONE) {
            // Take some action
            if (request.status === 200) {
                var counter = request.responseText;
-               var span = document.getElementById('num');
+               var span = document.getElementById('count');
                span.innerHTML = counter.toString();
            }
        } 
