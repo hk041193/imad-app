@@ -19,6 +19,11 @@ body {
     height: 200px;
 }
 
+.article-one {
+    height: 200px;
+    width: 400px;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
