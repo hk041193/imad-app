@@ -24,6 +24,11 @@ body {
     width: 300px;
 }
 
+.audi {
+    height: 640;
+    width: 360;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
