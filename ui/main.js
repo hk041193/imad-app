@@ -7,7 +7,7 @@ button.onclick = function () {
     var request = new XMLHttpRequest();
     
     //Capture the response and store it in a variable
-    request.onreadyStatechange = function () {
+    request.onreadystatechange = function () {
        if (request.readyState === XMLHttpRequest.DONE) {
            // Take some action
            if (request.status === 200) {
@@ -33,7 +33,7 @@ submit.onclick = function() {
     var name= ['name1', 'name2', 'name3', 'name4'];
     var list='';
     for(var i=0; i<name.length; i++){
-        list == '<li>' + name[i] + '</li>';
+        list += '<li>' + name[i] + '</li>';
     }
     var ul = document.getElementById('namelist');
     ul.innerHTML = list;
