@@ -19,9 +19,14 @@ body {
     height: 200px;
 }
 
-.logo {
-    height: 300px;
-    width: 300px;
+.bmw {
+    height: 512px;
+    width: 512px;
+}
+
+.mercedes {
+    height: 640px;
+    width: 540px;
 }
 
 .audi {
