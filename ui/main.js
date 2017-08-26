@@ -24,7 +24,7 @@ button.onclick = function () {
 };
 
 //Submit username/password to login
-var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn1');
 submit.onclick = function() {
     
     //Create request to object
