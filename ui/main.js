@@ -36,6 +36,7 @@ submit.onclick = function() {
            // Take some action
            if (request.status === 200) {
                //capture a list of names and render it
+               console.log('user logged in');
                submit.value = 'Sucess!';
                alert('logged in successfully');
            } else if (request.status === 403) {
